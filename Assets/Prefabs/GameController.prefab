@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7541684500660637426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7541684500660637430}
+  - component: {fileID: 7541684500660637431}
+  - component: {fileID: 7541684500660637424}
+  - component: {fileID: 7541684500660637425}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7541684500660637430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541684500660637426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7541684500660637431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541684500660637426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dba6156af7d0e8e4ab0b286d6a466eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GameplaySettings: {fileID: 11400000, guid: 710c9e9c03cfb6540a5c6467c25654e3, type: 2}
+  m_InputBindings: {fileID: 11400000, guid: c52eed68b67d3784ab4089988e77dd81, type: 2}
+--- !u!114 &7541684500660637424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541684500660637426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf41cb7fcbaeb347ab3035b2dd47114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SfxVolume: 1
+  m_VoiceVolume: 1
+  m_MusicVolume: 1
+  m_SfxMixer: {fileID: 243335366053303442, guid: 439d7d260bd1a1d49ac3f31a76cb4381,
+    type: 2}
+  m_MusicMixer: {fileID: 243730406919017618, guid: 439d7d260bd1a1d49ac3f31a76cb4381,
+    type: 2}
+--- !u!114 &7541684500660637425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541684500660637426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f80a5c1ed85e9a418eccbe87fac18e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MaxDecals: 250
+  m_DecalSeparator: 0.166

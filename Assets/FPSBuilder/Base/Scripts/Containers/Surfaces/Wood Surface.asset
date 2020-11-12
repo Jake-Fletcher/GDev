@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a31e3c88ccd7340b4272212e378d80, type: 3}
+  m_Name: Wood Surface
+  m_EditorClassIdentifier: 
+  m_FootstepsSounds:
+  - {fileID: 8300000, guid: 7b6d6d5b7ab1c4d49afff598b6e86fa2, type: 3}
+  - {fileID: 8300000, guid: c8ee323ce9127624f8719b1d6020a4a6, type: 3}
+  - {fileID: 8300000, guid: 34e63e8b300640e449fafba7b84a8a7a, type: 3}
+  - {fileID: 8300000, guid: 61f84bd2281f38f4a900b0124c9d72bc, type: 3}
+  - {fileID: 8300000, guid: 56e5787c3e4774248b12bb00c04469f8, type: 3}
+  m_SprintingFootstepsSounds:
+  - {fileID: 8300000, guid: a0abead8b2083b7438d8bd1a41ae8f9a, type: 3}
+  - {fileID: 8300000, guid: 0237dfe535e00e24394653c66be3c209, type: 3}
+  - {fileID: 8300000, guid: afd9ec3cbe50e6041b6348629d0ad485, type: 3}
+  - {fileID: 8300000, guid: cd13b834543097046b5e32d329ffac5e, type: 3}
+  - {fileID: 8300000, guid: 194b59c4438ca5e4483cf6c21854d91c, type: 3}
+  m_JumpSounds:
+  - {fileID: 8300000, guid: 302ed1af491cc2c4bb645840285dd761, type: 3}
+  m_LandingSounds:
+  - {fileID: 8300000, guid: e526a973245646d4ea68d3d9880e674d, type: 3}
+  m_SlidingSounds:
+  - {fileID: 8300000, guid: 9ecf2916c54017442b7f8e29efd80671, type: 3}
+  m_DecalSize: {x: 0.6, y: 0.8}
+  m_BulletImpactMaterial:
+  - {fileID: 2100000, guid: 39babc0a61c17df41bca722640cfc289, type: 2}
+  m_BulletImpactParticle:
+  - {fileID: 1000011190285628, guid: beb3acff7ab73944fb8f470f24d74ed3, type: 3}
+  m_BulletImpactSound:
+  - {fileID: 8300000, guid: 549fda6cbb45b084d950b97a18458e63, type: 3}
+  - {fileID: 8300000, guid: ef411e67019ae13498d323b0cbeee32d, type: 3}
+  m_BulletImpactVolume: 0.25

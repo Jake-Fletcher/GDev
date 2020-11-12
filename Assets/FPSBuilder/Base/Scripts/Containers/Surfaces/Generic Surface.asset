@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a31e3c88ccd7340b4272212e378d80, type: 3}
+  m_Name: Generic Surface
+  m_EditorClassIdentifier: 
+  m_FootstepsSounds:
+  - {fileID: 8300000, guid: 238659352329ec443ae6e1c1ff720faa, type: 3}
+  - {fileID: 8300000, guid: cf6d986e0cc411649a7a745e0f7f35b1, type: 3}
+  - {fileID: 8300000, guid: fc069841a4215624eb1bcbb0bbedc20a, type: 3}
+  - {fileID: 8300000, guid: c8982a2b99b4434478f52d4c44e4138d, type: 3}
+  - {fileID: 8300000, guid: 601a871158bb0d7409c92e1224e43975, type: 3}
+  - {fileID: 8300000, guid: 0318a1287d91786459d703efd3ea0d49, type: 3}
+  - {fileID: 8300000, guid: 559f981a63744a34aa2c16f102c1e61e, type: 3}
+  - {fileID: 8300000, guid: 57a7f0a9a74a2554d88a95617f30b14b, type: 3}
+  - {fileID: 8300000, guid: d426ec67005cc8c40ac2b90038cabd32, type: 3}
+  - {fileID: 8300000, guid: 769aa41eed10808408ed5bca566f74e4, type: 3}
+  m_SprintingFootstepsSounds:
+  - {fileID: 8300000, guid: 37d5067aafa7d524aac7ab7c7380564c, type: 3}
+  - {fileID: 8300000, guid: d333a73047ec06746862162691bff289, type: 3}
+  - {fileID: 8300000, guid: 92f7e4e686399264386d7ea544752c2a, type: 3}
+  - {fileID: 8300000, guid: cf437bad94ea10346b6a7698436234dd, type: 3}
+  - {fileID: 8300000, guid: 12498b29cf227fe45a16459eb5d6686e, type: 3}
+  - {fileID: 8300000, guid: 4cd45d1bbd4e6924d88d20c78f932ffb, type: 3}
+  - {fileID: 8300000, guid: 5eb532eb2a535534ab144caddccb7169, type: 3}
+  - {fileID: 8300000, guid: 014a6b427fce1004dbe16864b12c8e54, type: 3}
+  - {fileID: 8300000, guid: 7288946889eead94c9b30ce9fc45fcaa, type: 3}
+  - {fileID: 8300000, guid: 1f77b89321c220b49b09ee77f67408a0, type: 3}
+  m_JumpSounds:
+  - {fileID: 8300000, guid: 302ed1af491cc2c4bb645840285dd761, type: 3}
+  m_LandingSounds:
+  - {fileID: 8300000, guid: e526a973245646d4ea68d3d9880e674d, type: 3}
+  m_SlidingSounds:
+  - {fileID: 8300000, guid: 9ecf2916c54017442b7f8e29efd80671, type: 3}
+  m_DecalSize: {x: 0.7, y: 0.8}
+  m_BulletImpactMaterial:
+  - {fileID: 2100000, guid: 63a73dfb53225a948ae51e58d886f8a4, type: 2}
+  m_BulletImpactParticle:
+  - {fileID: 1000010844420130, guid: 984a6c0fda8b9cf4e82a0e599c23431e, type: 3}
+  m_BulletImpactSound:
+  - {fileID: 8300000, guid: ebb6bcaa4d819124e8cc08f4d920331f, type: 3}
+  m_BulletImpactVolume: 0.25

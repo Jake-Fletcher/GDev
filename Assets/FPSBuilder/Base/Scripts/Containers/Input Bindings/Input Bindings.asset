@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7019420342e7e3e499f11858761b7e45, type: 3}
+  m_Name: Input Bindings
+  m_EditorClassIdentifier: 
+  m_Buttons:
+  - m_Name: Jump
+    m_Key: space
+  - m_Name: Run
+    m_Key: left shift
+  - m_Name: Crouch
+    m_Key: left ctrl
+  - m_Name: Fire
+    m_Key: mouse 0
+  - m_Name: Aim
+    m_Key: mouse 1
+  - m_Name: Reload
+    m_Key: r
+  - m_Name: Melee
+    m_Key: c
+  - m_Name: Fire Mode
+    m_Key: x
+  - m_Name: Use
+    m_Key: f
+  - m_Name: Grenade
+    m_Key: g
+  - m_Name: Adrenaline
+    m_Key: t
+  - m_Name: Pause
+    m_Key: escape
+  - m_Name: Lean Left
+    m_Key: q
+  - m_Name: Lean Right
+    m_Key: e
+  - m_Name: Prt Sc
+    m_Key: p
+  m_Axes:
+  - m_Name: Vertical
+    m_PositiveKey: w
+    m_NegativeKey: s
+    m_Sensitivity: 0.4
+    m_Gravity: 5
+    m_DeadZone: 0.01
+  - m_Name: Horizontal
+    m_PositiveKey: d
+    m_NegativeKey: a
+    m_Sensitivity: 0.4
+    m_Gravity: 5
+    m_DeadZone: 0.01
