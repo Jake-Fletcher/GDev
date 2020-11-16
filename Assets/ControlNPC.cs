@@ -9,6 +9,7 @@ public class ControlNPC : MonoBehaviour
     AnimatorStateInfo info;
     Ray ray;
     RaycastHit hit;
+    int WPIndex = 1;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -53,12 +54,23 @@ public class ControlNPC : MonoBehaviour
             Debug.Log("In Idle");
             GetComponent<NavMeshAgent>().isStopped = false;
         }
-        
+
         else if (info.IsName("FollowPlayer"))
         {
             Debug.Log("Follow Player state");
             GetComponent<NavMeshAgent>().isStopped = false;
             GetComponent<NavMeshAgent>().destination = GameObject.Find("FPS_Alt").transform.position;
+        }
+        else if (info.IsName("Patrol"))
+        {
+            Debug.Log("Patrol");
+            GetComponent<NavMeshAgent>().isStopped = false;
+            GetComponent<NavMeshAgent>().destination = GameObject.Find("WP" + WPIndex).transform.position;
+            if (Vector3.Distance(transform.position, GameObject.Find("WP" + WPIndex).transform.position) < 1)
+            {
+                WPIndex++;
+                if (WPIndex > 3) WPIndex = 1;
+            }
         }
 
 
