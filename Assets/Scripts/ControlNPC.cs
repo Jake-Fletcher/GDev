@@ -5,6 +5,9 @@ using UnityEngine.AI;
 
 public class ControlNPC : MonoBehaviour
 {
+    bool screamed = false;
+    [SerializeField] AudioClip spotted;
+    AudioSource src;
     Animator anim;
     AnimatorStateInfo info;
     Ray ray;
@@ -12,6 +15,7 @@ public class ControlNPC : MonoBehaviour
     int WPIndex = 1;
     void Start()
     {
+        src = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         print("We did it boys: " + GameObject.Find("FPSController"));
     }
@@ -32,24 +36,6 @@ public class ControlNPC : MonoBehaviour
         }
 
 
-/*        if (Input.GetKeyDown(KeyCode.I))
-        {
-            anim.SetBool("CanSeePlayer", true);
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            anim.SetBool("CanSeePlayer", false);
-        }*/
-
-        /*        float distanceBetweenPlayerAndNPC = Vector3.Distance(gameObject.transform.position, GameObject.Find("FPSController").transform.position);
-                if (distanceBetweenPlayerAndNPC < 5)
-                {
-                    anim.SetBool("CanSeePlayer", true);
-                }
-                else
-                {
-                    anim.SetBool("CanSeePlayer", false);
-                }*/
 
         if (info.IsName("Idle"))
         {
@@ -59,7 +45,12 @@ public class ControlNPC : MonoBehaviour
 
         else if (info.IsName("FollowPlayer"))
         {
-            //Debug.Log("Follow Player state");
+            if (!screamed) { 
+                src.PlayOneShot(spotted);
+                screamed = true;
+            }
+
+
             GetComponent<NavMeshAgent>().isStopped = false;
             GetComponent<NavMeshAgent>().destination = GameObject.Find("FPSController").transform.position;
         }

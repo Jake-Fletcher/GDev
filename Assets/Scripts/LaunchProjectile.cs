@@ -17,7 +17,6 @@ public class LaunchProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.F))
         time += Time.deltaTime;
         if (time > 1.0f)
         {
