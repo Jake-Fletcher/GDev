@@ -10,7 +10,6 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
-        //pauseMenu = GameObject.Find("FPS_Alt");
     }
 
     void Update()

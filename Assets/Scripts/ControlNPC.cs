@@ -13,24 +13,26 @@ public class ControlNPC : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        print("We did it boys: " + GameObject.Find("FPSController"));
     }
 
     void Update()
     {
+
         info = anim.GetCurrentAnimatorStateInfo(0);
-        ray.origin = transform.position + Vector3.up;
+        ray.origin = transform.position;
         ray.direction = transform.forward;
         Debug.DrawRay(ray.origin, ray.direction * 100, Color.red);
         if (Physics.Raycast(ray.origin, ray.direction * 100, out hit))
         {
-            if (hit.collider.gameObject.name == "FPS_Alt")
+            if (hit.collider.gameObject.tag == "Player")
             {
                 anim.SetBool("CanSeePlayer", true);
             }
         }
 
 
-       /* if (Input.GetKeyDown(KeyCode.I))
+/*        if (Input.GetKeyDown(KeyCode.I))
         {
             anim.SetBool("CanSeePlayer", true);
         }
@@ -39,31 +41,31 @@ public class ControlNPC : MonoBehaviour
             anim.SetBool("CanSeePlayer", false);
         }*/
 
-        float distanceBetweenPlayerAndNPC = Vector3.Distance(gameObject.transform.position, GameObject.Find("FPS_Alt").transform.position);
-        if (distanceBetweenPlayerAndNPC < 5)
-        {
-            anim.SetBool("CanSeePlayer", true);
-        }
-        else
-        {
-            anim.SetBool("CanSeePlayer", false);
-        }
+        /*        float distanceBetweenPlayerAndNPC = Vector3.Distance(gameObject.transform.position, GameObject.Find("FPSController").transform.position);
+                if (distanceBetweenPlayerAndNPC < 5)
+                {
+                    anim.SetBool("CanSeePlayer", true);
+                }
+                else
+                {
+                    anim.SetBool("CanSeePlayer", false);
+                }*/
 
         if (info.IsName("Idle"))
         {
-            Debug.Log("In Idle");
+            //Debug.Log("In Idle");
             GetComponent<NavMeshAgent>().isStopped = false;
         }
 
         else if (info.IsName("FollowPlayer"))
         {
-            Debug.Log("Follow Player state");
+            //Debug.Log("Follow Player state");
             GetComponent<NavMeshAgent>().isStopped = false;
-            GetComponent<NavMeshAgent>().destination = GameObject.Find("FPS_Alt").transform.position;
+            GetComponent<NavMeshAgent>().destination = GameObject.Find("FPSController").transform.position;
         }
         else if (info.IsName("Patrol"))
         {
-            Debug.Log("Patrol");
+            //Debug.Log("Patrol");
             GetComponent<NavMeshAgent>().isStopped = false;
             GetComponent<NavMeshAgent>().destination = GameObject.Find("WP" + WPIndex).transform.position;
             if (Vector3.Distance(transform.position, GameObject.Find("WP" + WPIndex).transform.position) < 1)
@@ -72,7 +74,6 @@ public class ControlNPC : MonoBehaviour
                 if (WPIndex > 3) WPIndex = 1;
             }
         }
-
 
     }
 }

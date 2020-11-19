@@ -19,7 +19,7 @@ public class Col : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.name == "FPS_Alt")
+        if(other.name == "FPSController")
         {
             other.GetComponent<PlayerScript>().setPoints(PlayerPrefs.GetInt("points")+1);
             StartCoroutine(pickUpHandler(gameObject));
