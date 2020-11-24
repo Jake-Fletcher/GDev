@@ -24,7 +24,7 @@ public class LaunchProjectile : MonoBehaviour
             GameObject t = (GameObject)Instantiate(projectile, transform.position, Quaternion.identity);
             Destroy(t, 3);
             transform.LookAt(target.transform);
-            t.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+            t.GetComponent<Rigidbody>().AddForce(transform.forward * 1200);
         }
 
     }
