@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6094772818261544097}
   - component: {fileID: 6094772818261544102}
   - component: {fileID: -4758003267662447738}
+  - component: {fileID: -5990033411355352665}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -128,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd73294f80d68804cbb8e55d8048820f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spotted: {fileID: 0}
 --- !u!195 &6094772818261544102
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -246,3 +248,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5990033411355352665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6094772818261544088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae680ee749be4b84d8619af0fe99c4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
