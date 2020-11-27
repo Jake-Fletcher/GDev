@@ -9,12 +9,24 @@ public class Gun : MonoBehaviour
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
-    public float impactForce = 30f;
+    public float impactForce = 50f;
+    public float fireRate = 15f;
+
+    private float nextTimeToFire = 0f;
+/*    [SerializeField] AudioClip shotFired;
+    AudioSource source;*/
+
+
+/*    private void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }*/
 
     private void Update()
     {
-        if (Input.GetButtonDown("mouse 1"))
+        if (Input.GetButton("mouse 1") && Time.time >+ nextTimeToFire)
         {
+            nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
         }
     }
@@ -22,7 +34,7 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         muzzleFlash.Play();
-
+/*        source.PlayOneShot(shotFired);*/
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit))
         {
@@ -40,7 +52,7 @@ public class Gun : MonoBehaviour
             }
 
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-            Destroy(impactGO, 2f);
+            Destroy(impactGO, 1f);
         }
     }
 }
