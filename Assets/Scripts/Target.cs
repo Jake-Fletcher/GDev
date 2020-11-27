@@ -6,7 +6,6 @@ public class Target : MonoBehaviour
 {
     public float health = 50f;
     public ParticleSystem boom;
-    bool runOnce;
 
     public void TakeDamage(float amount)
     {
@@ -22,17 +21,10 @@ public class Target : MonoBehaviour
             Explode();
     }
 
-    private void Start()
-    {
-        runOnce = false;
-    }
-
     void Explode()
     {
-        if(runOnce == false)
-        {
-            Instantiate(boom, transform.position, transform.rotation);
-            runOnce = true;
-        }
+
+        Instantiate(boom, transform.position, transform.rotation);
+
     }
 }
