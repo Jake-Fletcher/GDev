@@ -12,7 +12,7 @@ public class generateMaze : MonoBehaviour
     void Start()
     {
         //ReadFromArray();
-       // ReadFromFile();
+        //ReadFromFile();
         ReadFromImage();
     }
 
@@ -21,7 +21,7 @@ public class generateMaze : MonoBehaviour
     {
         colorOfPixel = new Color[outlineImage.width, outlineImage.height];
 
-        GameObject.Find("StartRoom").transform.localScale = new Vector3(outlineImage.width * 10, 1, outlineImage.height * 10);
+        GameObject.Find("MiniMaze").transform.localScale = new Vector3(outlineImage.width * 10, 1, outlineImage.height * 10);
         for (int x=0; x < outlineImage.width; x++)
         {
             for (int y = 0; y < outlineImage.height; y++)
@@ -29,7 +29,7 @@ public class generateMaze : MonoBehaviour
                 colorOfPixel[x, y] = outlineImage.GetPixel(x, y);
                 if (colorOfPixel[x,y] != Color.white)
                 {
-                    GameObject t = (GameObject)(Instantiate(wall, new Vector3((outlineImage.width / 2*10)-x*10,1.5f, (outlineImage.height / 2 * 10) - y*10), Quaternion.identity));
+                    GameObject t = (GameObject)(Instantiate(wall, new Vector3((outlineImage.width / 4)-x,201, (outlineImage.height / 4) -y), Quaternion.identity));
                 }
             }
 
@@ -37,7 +37,7 @@ public class generateMaze : MonoBehaviour
     }
 
 
-    void ReadFromFile()
+/*    void ReadFromFile()
     {
         TextAsset t1 = (TextAsset)Resources.Load("maze", typeof(TextAsset));
 
@@ -56,9 +56,9 @@ public class generateMaze : MonoBehaviour
                 
             }
         }
-    }
+    }*/
 
-    void ReadFromArray()
+/*    void ReadFromArray()
     { 
         worldMap = new int[,]
         {
@@ -86,5 +86,5 @@ public class generateMaze : MonoBehaviour
                 }
                 }
             }
-        }
+        }*/
 }
