@@ -29,7 +29,7 @@ public class generateMaze : MonoBehaviour
                 colorOfPixel[x, y] = outlineImage.GetPixel(x, y);
                 if (colorOfPixel[x,y] != Color.white)
                 {
-                    GameObject t = (GameObject)(Instantiate(wall, new Vector3((outlineImage.width / 4)-x,201, (outlineImage.height / 4) -y), Quaternion.identity));
+                    GameObject t = (GameObject)(Instantiate(wall, new Vector3((outlineImage.width)-x*2 ,1, (outlineImage.height) -y*2 ), Quaternion.identity));
                 }
             }
 
