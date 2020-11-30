@@ -62,7 +62,7 @@ public class ControlNPC : MonoBehaviour
             if (Vector3.Distance(transform.position, GameObject.Find("WP" + WPIndex).transform.position) < 1)
             {
                 WPIndex++;
-                if (WPIndex > 3) WPIndex = 1;
+                if (WPIndex > 4) WPIndex = 1;
             }
         }
 
