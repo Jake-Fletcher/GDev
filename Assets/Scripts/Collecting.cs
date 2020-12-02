@@ -31,8 +31,7 @@ public class Collecting : MonoBehaviour
             displayScore();
             Debug.Log("Score:" + score);
             if (score >= 2) SceneManager.LoadScene("lvl-2");
-            else
-            if (score >= 3) SceneManager.LoadScene("lvl-3");
+            if (score >= 4) SceneManager.LoadScene("lvl-3");
         }
     }
     void displayScore()
