@@ -29652,5 +29652,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: setPoints
       objectReference: {fileID: 0}
+    - target: {fileID: 5521105365646810832, guid: e5b8803aea6185b41b62b5ebb2e6694d,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: f738a1c8a0f058a4597e7e3567ec4a4b,
+        type: 2}
+    - target: {fileID: 5521105365646810832, guid: e5b8803aea6185b41b62b5ebb2e6694d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5b8803aea6185b41b62b5ebb2e6694d, type: 3}
