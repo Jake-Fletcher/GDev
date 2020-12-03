@@ -17,7 +17,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         points = PlayerPrefs.GetInt("points");
-        scene2();
+        //scene2();
 
     }
 
@@ -29,9 +29,9 @@ public class PlayerScript : MonoBehaviour
     public void setPoints(int points) { PlayerPrefs.SetInt("points", points); print("Points: " + points); }
 
 
-    private void scene2()
+/*    private void scene2()
     {
         if (points >= 3 && SceneManager.GetActiveScene() != SceneManager.GetSceneByName("lvl-2")) SceneManager.LoadScene("lvl-2");
 
-    }
+    }*/
 }

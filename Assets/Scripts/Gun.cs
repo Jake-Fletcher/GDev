@@ -81,7 +81,7 @@ public class Gun : MonoBehaviour
 
             if (hit.rigidbody != null)
             {
-                hit.rigidbody.AddForce(-hit.normal * impactForce*4);
+                hit.rigidbody.AddForce(-hit.normal * impactForce*10);
             }
 
             GameObject impactGO = Instantiate(bigImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
