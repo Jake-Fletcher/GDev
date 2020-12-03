@@ -30,8 +30,8 @@ public class Collecting : MonoBehaviour
             //GameObject.Find("userMessage").GetComponent<Text>().text = "Score:" + score;
             displayScore();
             Debug.Log("Score:" + score);
-            if (score >= 2) SceneManager.LoadScene("lvl-2");
-            if (score >= 4) SceneManager.LoadScene("lvl-3");
+           //if (score >= 2) SceneManager.LoadScene("lvl-2");
+           //if (score >= 4) SceneManager.LoadScene("lvl-3");
         }
     }
     void displayScore()
