@@ -8,8 +8,8 @@ public class Gun : MonoBehaviour
     public float range = 100f;
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
-    public ParticleSystem bigMuzzleFlash;
     public GameObject impactEffect;
+    public ParticleSystem bigMuzzleFlash;
     public GameObject bigImpactEffect;
     public float impactForce = 50f;
     public float fireRate = 15f;
@@ -76,7 +76,7 @@ public class Gun : MonoBehaviour
             Target target = hit.transform.GetComponent<Target>();
             if (target != null)
             {
-                target.TakeDamage(damage);
+                target.TakeDamage(damage*3);
             }
 
             if (hit.rigidbody != null)
@@ -85,7 +85,7 @@ public class Gun : MonoBehaviour
             }
 
             GameObject impactGO = Instantiate(bigImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-            Destroy(impactGO, 1f);
+            Destroy(impactGO, 2f);
         }
     }
 }

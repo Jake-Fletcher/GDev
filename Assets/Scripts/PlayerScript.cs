@@ -26,7 +26,10 @@ public class PlayerScript : MonoBehaviour
         GUI.Label(new Rect(10,10,100,20), "Score : " + points);
     }
 
-    public void setPoints(int points) { PlayerPrefs.SetInt("points", points); print("Points: " + points); }
+    public void setPoints(int points) 
+    { 
+        PlayerPrefs.SetInt("points", points); print("Points: " + points); 
+    }
 
 
 /*    private void scene2()

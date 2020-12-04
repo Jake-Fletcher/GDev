@@ -206,7 +206,8 @@ MonoBehaviour:
   damage: 10
   range: 100
   fpsCam: {fileID: 0}
-  muzzleFlash: {fileID: 320389324460733887}
+  muzzleFlash: {fileID: 198000012944515248, guid: bc3f143de5fba0046bf2d6c7b2abbc44,
+    type: 3}
   bigMuzzleFlash: {fileID: 198000012944515248, guid: 9defeac88977c0d448aa4541073ee9e4,
     type: 3}
   impactEffect: {fileID: 1000012142692022, guid: a475880e7da0e9548aa05cb7933752cd,
@@ -412,12 +413,6 @@ PrefabInstance:
 --- !u!4 &487262252606907573 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011227296186, guid: 9defeac88977c0d448aa4541073ee9e4,
-    type: 3}
-  m_PrefabInstance: {fileID: 490100242178086159}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &320389324460733887 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198000012944515248, guid: 9defeac88977c0d448aa4541073ee9e4,
     type: 3}
   m_PrefabInstance: {fileID: 490100242178086159}
   m_PrefabAsset: {fileID: 0}
